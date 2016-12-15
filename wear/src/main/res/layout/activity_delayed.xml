@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.wearable.view.BoxInsetLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <LinearLayout
+        app:layout_box="all"
+        android:gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <android.support.wearable.view.DelayedConfirmationView
+            android:id="@+id/cancel"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:clickable="true"
+            android:layout_gravity="center"
+            android:src="@drawable/ic_cc_clear"
+            app:circle_border_color="@android:color/holo_blue_light"
+            app:circle_border_width="4dp"
+            app:circle_color="@color/blue"
+            app:circle_radius="20dp"
+            app:circle_radius_pressed="30dp"/>
+        <android.support.wearable.view.DelayedConfirmationView
+            android:id="@+id/ok"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_gravity="center"
+            android:src="@drawable/ic_cc_checkmark"
+            app:circle_border_color="@android:color/holo_green_light"
+            app:circle_border_width="4dp"
+            app:circle_color="@color/green"
+            app:circle_radius="16dp"/>
+    </LinearLayout>
+</android.support.wearable.view.BoxInsetLayout>
